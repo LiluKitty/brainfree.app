@@ -71,14 +71,6 @@ nav.scrolled {
     transform: translateY(-1px);
     box-shadow: 0 4px 20px rgba(129, 140, 248, 0.4);
 }
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 /* ===== HERO ===== */
 .hero {
@@ -88,29 +80,8 @@ nav.scrolled {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 8rem 2rem 4rem;
+    padding: 10rem 2rem 4rem;
     position: relative;
-}
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 1rem;
-    border-radius: 100px;
-    border: 1px solid rgba(129, 140, 248, 0.3);
-    background: rgba(129, 140, 248, 0.08);
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #a5b4fc;
-    margin-bottom: 2rem;
-    animation: fadeUp 0.8s ease forwards;
-}
-.hero-badge .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #34d399;
-    animation: pulse 2s infinite;
 }
 .hero h1 {
     font-family: 'Space Grotesk', sans-serif;
@@ -703,22 +674,6 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
 }
-.footer-socials {
-    display: flex;
-    gap: 1rem;
-}
-.footer-socials a {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s;
-}
-.footer-socials a:hover { background: rgba(129, 140, 248, 0.2); }
-.footer-socials svg { width: 16px; height: 16px; fill: rgba(255,255,255,0.5); }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
@@ -778,8 +733,6 @@ body {
 .btn-secondary,
 .nav-links a,
 .nav-cta,
-.mobile-menu-btn,
-.footer-socials a,
 .footer-col a {
     min-height: 44px;
     display: inline-flex;
@@ -807,7 +760,7 @@ html {
 @media (max-width: 768px) {
     .nav-links { gap: 1rem; flex-wrap: wrap; }
     .nav-links a { font-size: 0.75rem; }
-    .hero { padding: 7rem 1.5rem 3rem; }
+    .hero { padding: 9rem 1.5rem 3rem; }
     .hero h1 { font-size: clamp(2.25rem, 10vw, 3.5rem); }
     .hero-sub { font-size: 1rem; }
     .problem { padding: 5rem 1.5rem; }
@@ -836,7 +789,7 @@ html {
 
 /* ===== RESPONSIVE — SMALL PHONES (iPhone SE / mini) ===== */
 @media (max-width: 375px) {
-    .hero { padding: 6rem 1rem 2.5rem; }
+    .hero { padding: 8rem 1rem 2.5rem; }
     .hero h1 { font-size: 2rem; }
     .hero-sub { font-size: 0.9rem; }
     .hero-ctas { flex-direction: column; align-items: center; }
