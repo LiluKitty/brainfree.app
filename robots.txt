@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brainfree.pages.dev/sitemap.xml

@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects
+# /old-path  /new-path  status-code
+
+# Handle trailing slashes
+/index.html  /  301

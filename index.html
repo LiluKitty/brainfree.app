@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta -->
+    <title>Brainfree,Reclaim Your Focus, Stop Doomscrolling</title>
+    <meta name="description" content="Brainfree helps you break free from endless scrolling and reclaim your time. Build better digital habits, reduce screen time, and start living.">
+    <meta name="keywords" content="brainfree, screen time, doomscrolling, digital wellness, phone addiction, focus app, habit tracker, screen time reducer">
+    <meta name="author" content="Brainfree">
+    <meta name="theme-color" content="#050505">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Smart App Banner (replace app-id with your real App Store ID) -->
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_STORE_ID, app-argument=https://brainfree.pages.dev/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://brainfree.pages.dev/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brainfree.pages.dev/">
+    <meta property="og:title" content="Brainfree,Stop Scrolling. Start Living.">
+    <meta property="og:description" content="Break free from doomscrolling. Reclaim your focus, time, and peace of mind with Brainfree.">
+    <meta property="og:image" content="https://brainfree.pages.dev/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Brainfree">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brainfree,Stop Scrolling. Start Living.">
+    <meta name="twitter:description" content="Break free from doomscrolling. Reclaim your focus, time, and peace of mind.">
+    <meta name="twitter:image" content="https://brainfree.pages.dev/img/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icon-192.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Brainfree",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "Block distracting apps and websites, create custom focus schedules, and activate Deep Focus mode. Brainfree helps you reclaim your time and your mind.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "availability": "PreOrder"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Brainfree",
+        "url": "https://brainfree.pages.dev",
+        "logo": "https://brainfree.pages.dev/img/favicon.svg",
+        "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="Brainfree Home">brain<span>free</span></a>
+        <div class="nav-links" id="navLinks">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#download" class="nav-cta">Download</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <h1>Defeat the <span class="gradient-text">dark side</span> of the scroll.</h1>
+
+        <p class="hero-sub">The average person loses <strong style="color:#f472b6;">7+ hours a day</strong> to endless feeds. Block distracting apps and websites, create focus schedules, and take back your mind. All in under 60 seconds.</p>
+
+        <div class="hero-ctas">
+            <a href="#download" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                Download
+            </a>
+            <a href="#how-it-works" class="btn-secondary">See How It Works</a>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <div class="screen-time" id="screenTime">BrainFree</div>
+                    <div class="screen-label">Deep Focus Active</div>
+                    <div class="screen-stat-row">
+                        <div class="screen-stat-card">
+                            <div class="stat-num">Work</div>
+                            <div class="stat-lbl">Schedule</div>
+                        </div>
+                        <div class="screen-stat-card">
+                            <div class="stat-num">5</div>
+                            <div class="stat-lbl">Apps blocked</div>
+                        </div>
+                    </div>
+                    <div class="screen-bar-chart">
+                        <div class="bar" style="height: 90%"></div>
+                        <div class="bar" style="height: 85%"></div>
+                        <div class="bar" style="height: 95%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 40%"></div>
+                    </div>
+                    <div class="screen-day-labels">
+                        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof reveal" aria-label="Statistics">
+        <p>From the noise, a new hope appears</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number">Soon</div>
+                <div class="stat-label">Available on iOS</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2,555h</div>
+                <div class="stat-label">Time back guarantee / year</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">&lt; 60s</div>
+                <div class="stat-label">Setup time</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem reveal" aria-label="The problem with screen time">
+        <span class="section-label">The Dark Side</span>
+        <h2>The scroll's quiet conquest: <span style="color: #f472b6;">7+ hours a day</span> lost to endless feeds</h2>
+
+        <div class="problem-stats">
+            <div class="problem-card reveal">
+                <div class="icon">&#128247;</div>
+                <h3>2,617</h3>
+                <p>Average daily phone pickups per person</p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="icon">&#9200;</div>
+                <h3>58 days</h3>
+                <p>Spent on social media every single year</p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="icon">&#129504;</div>
+                <h3>91%</h3>
+                <p>Of people want to reduce their screen time</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works" aria-label="How Brainfree works">
+        <div class="section-header reveal">
+            <span class="section-label">How It Works</span>
+            <h2>Three steps to a <span class="gradient-text">clearer mind</span></h2>
+        </div>
+
+        <div class="steps">
+            <div class="step reveal">
+                <div class="step-number">1</div>
+                <h3>Create your schedules</h3>
+                <p>Set up profiles like "Work" or "School". Pick which apps and websites to block, choose the days, and set your hours.</p>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">2</div>
+                <h3>Stay on track</h3>
+                <p>Motivational illustrations and messages keep you going. Try to unlock a blocked app? You'll need to complete an extra difficult challenge first.</p>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">3</div>
+                <h3>Go deeper</h3>
+                <p>Activate Deep Focus to lock everything down. Set time limits on your most addictive apps. Watch your screen time shrink day by day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features" aria-label="App features">
+        <div class="section-header reveal">
+            <span class="section-label">Your Arsenal</span>
+            <h2>Everything you need to <span class="gradient-text">fight back</span></h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#128197;</div>
+                <h3>Custom Schedules</h3>
+                <p>Create profiles like "Work", "School", or "Bedtime". Pick the apps, websites, days, and hours. Your rules, your life.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#128274;</div>
+                <h3>Deep Focus Mode</h3>
+                <p>When you need zero distractions, lock everything down. No exceptions, no loopholes. Just you and what matters.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#9200;</div>
+                <h3>Time Limits</h3>
+                <p>Set daily spending limits on your most addictive apps. Once your time is up, the app gets blocked until tomorrow.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#128170;</div>
+                <h3>Tough Unlock Challenges</h3>
+                <p>Trying to cheat? You'll face an extra difficult task before you can unlock anything. Most people give up and stay focused.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#127775;</div>
+                <h3>Motivational Fuel</h3>
+                <p>Beautiful illustrations and powerful messages that remind you why you started. They hit different when temptation is real.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">&#127760;</div>
+                <h3>Website Blocking</h3>
+                <p>Not just apps. Block distracting websites too. Social media, news feeds, anything that pulls you into the scroll.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials" aria-label="User reviews">
+        <div class="section-header reveal">
+            <span class="section-label">What People Say</span>
+            <h2>Real people, <span class="gradient-text">real results</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>"I went from 6 hours of screen time to under 2. I actually read a whole book last week. A real, physical book."</blockquote>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">S</div>
+                    <div>
+                        <div class="testimonial-name">Sarah K.</div>
+                        <div class="testimonial-handle">Recovered scroller</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>"The unlock challenges are brutal in the best way. I tried to open Instagram during work and just gave up. Exactly what I needed."</blockquote>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <div class="testimonial-name">Marcus T.</div>
+                        <div class="testimonial-handle">Focused at work</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>"My anxiety dropped significantly after the first two weeks. I didn't realize how much doomscrolling was wrecking me."</blockquote>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <div class="testimonial-name">Jess L.</div>
+                        <div class="testimonial-handle">Feeling free</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="download" aria-label="Download Brainfree">
+        <div class="cta-box reveal">
+            <span class="section-label">May the Focus Be With You</span>
+            <h2>Your brain deserves a break</h2>
+            <p>Join the resistance. Reclaim your time, your mind, and your life.</p>
+            <div class="hero-ctas">
+                <span class="btn-primary" style="cursor: default; opacity: 0.7;" aria-label="Available soon on the App Store">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.05 4.83 18.89 5.08 20.07 6.81C19.96 6.87 17.62 8.23 17.65 11.1C17.68 14.56 20.61 15.7 20.64 15.71C20.62 15.78 20.15 17.38 19.03 19.02L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+                    Available Soon on the App Store
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="nav-logo">brain<span>free</span></div>
+                <p>A long time ago, the dark side of the scroll began its quiet conquest. We're here to end it.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Brainfree. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

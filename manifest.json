@@ -1,0 +1,21 @@
+{
+  "name": "Brainfree",
+  "short_name": "Brainfree",
+  "description": "Break free from doomscrolling. Reclaim your focus, time, and peace of mind.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#818cf8",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

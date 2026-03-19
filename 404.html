@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Brainfree</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #050505;
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            -webkit-font-smoothing: antialiased;
+        }
+        .error-code {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0.8;
+        }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+        p {
+            color: rgba(255,255,255,0.45);
+            margin-top: 0.75rem;
+            max-width: 400px;
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            background: #818cf8;
+            color: #050505;
+            padding: 0.75rem 1.75rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(129, 140, 248, 0.4);
+        }
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .orb-1 {
+            width: 400px; height: 400px;
+            background: rgba(129, 140, 248, 0.1);
+            top: 10%; left: 10%;
+        }
+        .orb-2 {
+            width: 300px; height: 300px;
+            background: rgba(192, 132, 252, 0.08);
+            bottom: 10%; right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="error-code">404</div>
+    <h1>Page not found</h1>
+    <p>Looks like this page took a digital detox. Let's get you back on track.</p>
+    <a href="/" class="back-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Home
+    </a>
+</body>
+</html>
