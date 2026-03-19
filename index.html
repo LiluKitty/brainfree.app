@@ -14,6 +14,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
 
+    <!-- Clean URL: remove index.html from address bar -->
+    <script>if(window.location.pathname.endsWith('/index.html')){history.replaceState(null,'',window.location.pathname.replace('/index.html','/'));}</script>
+
     <!-- Smart App Banner - uncomment and replace YOUR_APP_STORE_ID when live
     <meta name="apple-itunes-app" content="app-id=YOUR_APP_STORE_ID, app-argument=https://brainfree.app/">
     -->
