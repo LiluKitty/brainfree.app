@@ -758,8 +758,7 @@ html {
 
 /* ===== RESPONSIVE — MOBILE ===== */
 @media (max-width: 768px) {
-    .nav-links { gap: 1rem; flex-wrap: wrap; }
-    .nav-links a { font-size: 0.75rem; }
+    .nav-links { display: none; }
     .hero { padding: 9rem 1.5rem 3rem; }
     .hero h1 { font-size: clamp(2.25rem, 10vw, 3.5rem); }
     .hero-sub { font-size: 1rem; }
